@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-ERFECT AWAK LOGS | Social Media Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    :root{
+        --awak-bg-color:#000000;
+        --awak-color:#D4AF37;
+    }
+    /* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color:var(--awak-bg-color); /* Deep Black */
+    color: var(--awak-color);           /* Metallic Gold */
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid var(--awak-color);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: var(--awak-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    filter: brightness(1.5);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: var(--awak-bg-color);
+    color: var(--awak-color);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Services Grid */
+.services {
+    display: grid;
+    gap: 20px;
+    padding: 50px 5%;
+}
+
+.service-card {
+    border: 1px solid #D4AF37;
+    padding: 30px;
+    text-align: center;
+}
+
+/* --- Media Queries --- */
+
+/* Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Simplifies mobile view; usually replaced by a burger menu */
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .services {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+    }
+}
+
+/* Large Screens (Desktop) */
+@media (min-width: 769px) {
+    .services {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    }
+}
+</style>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">P-ERFECT AWAK LOGS</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Elevate Your Digital Presence</h1>
+        <p>Premium Social Media Marketing Solutions.</p>
+        <button class="cta-btn>
+    </section>
+
+    <section class="services">
+        <div class="service-card">
+            <h3>Content Strategy</h3>
+            <p>Tailored narratives that resonate with your audience.</p>
+        </div>
+        <div class="service-card">
+            <h3>Growth Hacking</h3>
+            <p>Data-driven tactics to scale your brand quickly.</p>
+        </div>
+        <div class="service-card">
+            <h3>Ad Management</h3>
+            <p>High-conversion campaigns across all platforms.</p>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --primary-bg-color:blue;
+        --primary-color:white;
+    }
+    body {
+        background-color: var(--primary-bg-color);
+    }
+
+    .container {
+        color: var(--primary-bg-color);
+        background-color: var(--primary-color);
+        padding: 15px;
+    }
+
+    .container h2 {
+        border-bottom: var(--primary-bg-color);
+    }
+
+    .container .note{
+        border: 1px solid var(--primary-bg-color);
+        padding: 10px;}
+
+    .footer {
+        background-color: var(--primary-bg-color);
+        color:var(--primary-color);
+        text-align: center;
+    }
+
+    ul.pagination{
+        padding: 2px;
+        margin: 2px;
+        color:var(--primary-color);
+        text-align: left;
+    }
+    ul.pagination li{display: inline;}
+
+    ul.pagination li+li:before {content: "/";
+   color:black; }
+   
+   .a{
+    color: var(--primary-color);
+    text-decoration:none;
+   }
+
+</style>
+<body>
+    <h1 style="color: var(--primary-color);"> USING THE VAR() FUNCTION</h1>
+
+    <div class="container">
+        <h2> EXXON MOBILE</h2>
+        
+        <p> we are currently recruiting several job position for <br>
+       the following:<br>
+       .  Electrical Engineer<br>
+       .  Electricaln Technician<br>
+       .  HSE supervisor<br>
+       .  Civil Engineer<br>
+       .  Painting and installation<br>
+           officer<br>
+       .  Site planning Engineer QA/QC<br>
+       .  Instrumentation Engineer<br>
+       .  Rigger Foreman<br>
+       .  Rigger.</p>
+
+       <p>intrested and qualified candidate with
+       working experience in similar roles and fields should
+       send thier CV to</p>
+
+       <p class="note">Fill in your detail's here!</p>
+    </div>
+
+    <footer class="footer">
+            EXXON MOBILE
+            
+            <ul class="pagination">
+            <li><a class="a" href="google.com">home</a></li>
+            <li><a class="a" href="facebook.com">about</a></li>
+            <li><a class="a" href="tiktok.com">page 24</a></li>
+            <li><a class="a" href="H">Nigeria</a></li>
+         </ul>   
+    </footer>
+
+</body>
+</html>

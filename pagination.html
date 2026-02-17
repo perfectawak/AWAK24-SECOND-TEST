@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      :root {
+        --perfect-bg-color:rgba(0, 51, 128,0.9);
+        --perfect-color: black;
+      }
+        .pagination{
+            display:flex;
+            justify-content: center;
+            list-style: none; /* remove list bullets*/
+            padding: 10px;
+        }
+
+        .pagination li a {
+            display:block;  /* let links fill the list
+             item */
+            padding: 8px 12px;
+            text-decoration:none;
+            border:1px solid gray;
+            color: var(--perfect-color);
+            margin: 0 4px;
+            color: var(--perfect-color);
+            margin: 0 4px;
+            border-radius:15px; /* add rounded borders
+            */
+
+        }
+    </style>
+</head>
+<body>
+
+    <h2>A Simple Pagination</h2>
+
+    <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+    
+</body>
+</html><br><br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.pagination {
+  display:flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+}
+
+.pagination li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  border: 1px solid gray;
+  color: var(--perfect-color);
+  margin: 0 4px;
+  border-radius: 5px;
+  transition: background-color 1s;  
+}
+
+.pagination li a.active {
+  background-color: var(--perfect-bg-color);
+  color: rgb(245, 248, 248);
+}
+
+.pagination li a:hover:not(.active) {
+  background-color: var(--perfect-bg-color);
+}
+
+.pagination li a.disable {
+color:#dddddd;
+cursor:not-allowed;
+pointer-event:none;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Pagination with Transition Effect on Hover</h2>
+
+<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a class="active" href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a class="disable" href="#">&raquo;</a></li>
+</ul>
+
+</body>
+</html><br><br>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul.breadcrumb {
+  padding: 8px;
+  list-style: none;
+  background-color:var(--perfect-bg-color);
+}
+
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li a {color:var(--perfect-color)}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--perfect-color);
+  content:"/";
+}
+</style>
+</head>
+<body>
+
+<h2>Breadcrumb Pagination</h2>
+
+<ul class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Pictures</a></li>
+  <li><a href="#">Summer 25</a></li>
+  <li>Italy</li>
+</ul>
+
+</body>
+</html>

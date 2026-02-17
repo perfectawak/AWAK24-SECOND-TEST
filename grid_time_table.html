@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAEC Timetable</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            padding: 20px;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+    
+        .timetable-grid {
+            display: grid;
+            grid-template-columns: 150px 150px 1fr 120px;
+            max-width: 900px;
+            margin: 20px auto;
+            border: 2px solid #2c3e50;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .grid-header {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .grid-item {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            border-right: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-item:nth-child(4n) {
+            border-right: none;
+        }
+
+        .row-even {
+            background-color: #f9f9f9;
+        }
+
+        @media (max-width: 600px) {
+            .timetable-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .grid-header {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>WAEC EXAMINATION TIMETABLE </h2>
+
+    <div class="timetable-grid">
+        <div class="grid-header">Date</div>
+        <div class="grid-header">Time</div>
+        <div class="grid-header">Subject</div>
+        <div class="grid-header">Duration</div>
+
+        <div class="grid-item">Mon, May 12</div>
+        <div class="grid-item">09:30 AM</div>
+        <div class="grid-item">English Language (Objective & Essay)</div>
+        <div class="grid-item">3hrs</div>
+
+        <div class="grid-item row-even">Tue, May 13</div>
+        <div class="grid-item row-even">09:30 AM</div>
+        <div class="grid-item row-even">General Mathematics (Objective)</div>
+        <div class="grid-item row-even">1hr 30mins</div>
+
+        <div class="grid-item">Tue, May 13</div>
+        <div class="grid-item">12:00 PM</div>
+        <div class="grid-item">General Mathematics (Essay)</div>
+        <div class="grid-item">2hrs 30mins</div>
+
+        <div class="grid-item row-even">Wed, May 14</div>
+        <div class="grid-item row-even">09:30 AM</div>
+        <div class="grid-item row-even">Physics (Practical)</div>
+        <div class="grid-item row-even">2hrs 45mins</div>
+
+        <div class="grid-item">Thu, May 15</div>
+        <div class="grid-item">09:30 AM</div>
+        <div class="grid-item">Biology (Objective & Essay)</div>
+        <div class="grid-item">2hrs 30mins</div>
+    </div>
+
+</body>
+</html>

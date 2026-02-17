@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position:relative;
+            width:50%;
+        }
+        .image{
+            display:block;
+            width:100%;
+            height: auto;
+        }
+
+        .overlay{
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #008CBA;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: 10s ease;
+        }
+
+        .container:hover .overlay{
+            height: 100%;
+        }
+
+        .text{
+            white-space: nowrap;
+            color: whitesmoke;
+            font-size: 20px;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>slide in overlay from the bottom</h2>
+
+    <div class="container">
+        <img src="img_avatar.png" alt="Avatar"
+        class="image">
+        <div class="overlay">
+            <div class="text">HELLO WORLD</div>
+        </div>
+    </div>
+
+</body>
+</html><br><br>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>Slide in Overlay from the Left</h2>
+
+<div class="container">
+  <img src="img_avatar.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+
+</body>
+</html><br><br>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img:hover {
+  transform: scaleX(-1);
+}
+</style>
+</head>
+<body>
+
+<h2>Flip an Image</h2>
+<p>Move your mouse over the image.</p>
+
+<img src="paris.jpg" alt="Paris" width="400" height="300">
+
+</body>
+</html><br><br>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  border: 1px solid blue;
+  border-radius: 44px;
+  padding: 5px;
+  width: 150px;
+}
+</style>
+</head>
+<body>
+
+<h2>Thumbnail Image</h2>
+
+<p>Use the border property to create thumbnail images:</p>
+
+<img src="paris.jpg" alt="Paris" style="width:150px">
+
+</body>
+</html>
+
